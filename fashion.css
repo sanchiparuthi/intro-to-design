@@ -1,0 +1,113 @@
+body{
+    background-color: rgb(16, 76, 43);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.logo{
+    color: rgb(203, 2, 2);
+    font-size: 50px;
+
+}
+
+nav ul li{
+    list-style-type:none;
+    display: inline-block;
+    padding: 15px 15px;
+   
+}
+
+nav ul li a{
+    color: rgb(203, 2, 2);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: rgb(26, 41, 79);
+    transition: 1s;
+    
+
+}
+
+button{
+   border: none;;
+    background: none;
+    padding: 100px, 30px;
+    color: rgb(203, 2, 2);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#fall1 {
+    opacity: 30;
+    max-width: 100%;
+  height: auto;
+    position: absolute; top: 250px; left: 50px;
+    animation: falling 2s infinite;
+    animation-direction: alternate;
+  }
+  
+  #fall2 {
+    position: absolute; top: 450px; left: 570px;
+    animation: falling 5s infinite;
+    animation-direction: alternate;
+  }
+  
+  #fall3 {
+    position: absolute; top: 150px; left: 870px;
+    animation: falling 4s infinite both;
+    animation-direction: alternate;
+    animation-delay: -2s;
+  }
+  
+  
+  @keyframes falling{
+      from {
+          transform: translateY(0%);
+      }
+  
+      to{
+          transform: translateY(10%);
+          transform: rotateX('50');
+      }
+  }
+
+h1{
+color: rgb(194, 24, 24);
+margin: 10px
+}
+
+h2{
+color: rgb(255, 255, 255);
+margin: 10px;
+}
+
+p{
+color: aliceblue;
+margin: 10px
+}
